@@ -15,20 +15,14 @@ import kodlama.io.languageDevs.business.requests.CreateProgrammingLanguageReques
 import kodlama.io.languageDevs.business.requests.RemoveProgrammingLanguageRequest;
 import kodlama.io.languageDevs.business.requests.UpdateProgrammingLanguageRequest;
 import kodlama.io.languageDevs.business.responses.GetAllProgrammingLanguageResponses;
+import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/api/language")
+@AllArgsConstructor
 public class ProgrammingLanguageController {
 
 	ProgrammingLanguageService programmingLanguageService;
-	
-	
-	@Autowired
-	public ProgrammingLanguageController(ProgrammingLanguageService programmingLanguageService) {
-		super();
-		this.programmingLanguageService = programmingLanguageService;
-	}
-
 
 
 	@PostMapping("/add")

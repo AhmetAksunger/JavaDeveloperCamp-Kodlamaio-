@@ -12,7 +12,7 @@ public class UpdateProgrammingLanguageRequest {
 
 	private int id;
 	
-	private String newName;
+	private String name;
 	
 	
 }
